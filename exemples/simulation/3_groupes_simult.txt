@@ -1,0 +1,10 @@
+MODE SIMULATION
+VV
+0 1
+RR
+0 1
+VR
+1 3
+VR
+1 4
+

@@ -1,0 +1,9 @@
+MODE SIMULATION
+BJ
+0 1
+BJ
+1 3
+BJ
+2 4
+BJ
+3 6

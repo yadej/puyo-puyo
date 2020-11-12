@@ -1,0 +1,73 @@
+MODE SIMULATION
+VR
+0 1
+JB
+0 3
+RV
+0 5
+VR
+0 1
+JB
+0 3
+RV
+0 5
+VR
+0 1
+JB
+0 3
+RV
+0 5
+BJ
+0 1
+BR
+0 3
+VB
+0 5
+BV
+0 1
+JB
+0 3
+RV
+0 5
+VJ
+0 1
+BR
+0 3
+RV
+0 5
+BV
+0 1
+JB
+0 3
+VB
+0 5
+BV
+0 1
+JB
+0 3
+RB
+0 5
+VB
+0 1
+VV
+0 3
+JJ
+0 5
+RB
+0 1
+RB
+0 3
+VB
+0 5
+BR
+0 1
+RV
+0 3
+JB
+0 5
+JV
+0 5
+BB
+0 3
+BR
+0 1

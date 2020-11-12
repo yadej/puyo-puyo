@@ -1,0 +1,13 @@
+MODE SIMULATION
+RB
+0 1
+BB
+0 3
+VV
+0 1
+RR
+1 1
+RB
+1 1
+VV
+0 3
