@@ -1,4 +1,3 @@
-
 #include "grid.h"
 #include "assert.h"
 using namespace std;
@@ -12,10 +11,10 @@ Grille::Grille(){};
 Grille::Grille(vector<vector<puyoType>>tableau):contient(tableau){
 }
 
-/** Change les types puyotypes en caractères
+/** Change les types puyotypes en caractÃ¨res
  *
  * @param p un type puyo
- * @return un charactères
+ * @return un charactÃ¨res
  *
  */
 
@@ -36,7 +35,7 @@ char PuyoToChar(puyoType p) {
     return ' ';
 }
 
-/** Change un caractère en un type puyo si le caractère fait partie de cela
+/** Change un caractÃ¨re en un type puyo si le caractÃ¨re fait partie de cela
  *
  * \param un char p
  *
@@ -76,10 +75,10 @@ bool Grille::IsGameOver(){
     }
     return false;
 }
-/**  créer la prochaine piece qui va tomber et la placer
+/**  crÃ©er la prochaine piece qui va tomber et la placer
  *
  * @param  un entier n  un entier w
- * @param  un caractère p  un caractère z
+ * @param  un caractÃ¨re p  un caractÃ¨re z
  */
 
 void Grille::createnextpiece(int n,int w,char p,char z){
@@ -100,13 +99,13 @@ void Grille::createnextpiece(int n,int w,char p,char z){
     }
 
 }
-/** Vérifie le placement et le score
+/** VÃ©rifie le placement et le score
  */
 void Grille::testplacement1(){
     assert(contient[0][2]==Bleu);
     assert(contient[1][2]==Vert);
 }
-/** Fait quelque teste en plaçant des puyos
+/** Fait quelque teste en plaÃ§ant des puyos
  */
 
 void Grille::testplacement2(){
@@ -137,8 +136,8 @@ void Grille::testplacement2(){
 
 }
 
-/** Fait tomber les puyos dans le bas du tableau et renvoie false si ils sont tous tombés
- * \return false si les puyos sont tous tombés
+/** Fait tomber les puyos dans le bas du tableau et renvoie false si ils sont tous tombÃ©s
+ * \return false si les puyos sont tous tombÃ©s
  *
  */
 
@@ -168,7 +167,7 @@ bool Grille::jeugravite(){
      return false;
      }
 
-/** écrit dans le fichier le tableau des puyos en char
+/** Ã©crit dans le fichier le tableau des puyos en char
  * \param  abc un fichier ofstream
  * \return void
  */
@@ -195,7 +194,7 @@ void Grille::montrepuyo(){
         cout<<endl;
     }
 }
-/** \brief compte les puyo et les enleve quand il y a assez côte à côte et définit le score en plus
+/** \brief compte les puyo et les enleve quand il y a assez cÃ´te Ã  cÃ´te et dÃ©finit le score en plus
  * \return void
  */
 
@@ -231,7 +230,7 @@ void Grille::compte_puyo(){
         combo=1;
     }
 }
-/** compte les puyos si ils sont égale au puyo d'origine et rajoute leur coordonné dans un tableau
+/** compte les puyos si ils sont Ã©gale au puyo d'origine et rajoute leur coordonnÃ© dans un tableau
  *
  * @param un entier x, un entier y et une type puyoType c
  * @return void
@@ -260,7 +259,7 @@ void Grille::Count(int x,int y,puyoType c){
         }
     }
 }
-/** \ enlève les puyos  dont les positions sont mis dans un tableau
+/** \ enlÃ¨ve les puyos  dont les positions sont mis dans un tableau
  * \param lav un tableau2D
  * \return void
  */
@@ -271,10 +270,10 @@ void Grille::del(vector<vector<int>>lav){
     }
 
 }
-/** Calcule le score cumulé
+/** Calcule le score cumulÃ©
  *
  * \param un entier a,un entier combo,un entier puyo,un entier groupe
- * \return return a sinon return 999999 si a superieur à ce nombre
+ * \return return a sinon return 999999 si a superieur Ã  ce nombre
  *
  */
 
@@ -282,7 +281,7 @@ int Grille::scoreplus(int a, int combo,int puyo,int groupe){
     int k=1;
     int m=1;
     while (combo>0){
-        k*=k;
+        k*=3;
         combo--;
     }
     while (groupe>0){
@@ -297,7 +296,7 @@ int Grille::scoreplus(int a, int combo,int puyo,int groupe){
     }
     return a;
 }
-/** écrit défaite sur un fichier quand on demande la fontion
+/** Ã©crit dÃ©faite sur un fichier quand on demande la fontion
  *
  * \param abc le fichier
  * \return void
@@ -305,7 +304,7 @@ int Grille::scoreplus(int a, int combo,int puyo,int groupe){
  */
 
 void Grille::game_over(std::ofstream& abc){
-    abc<<"Défaite"<<endl;
+    abc<<"DÃ©faite"<<endl;
 }
 /** \ Affiche le score
  * \return void
