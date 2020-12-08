@@ -1,6 +1,0 @@
-MODE SOLO
-BV
-JR
-BR
-VJ
-MV
